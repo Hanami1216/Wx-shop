@@ -1,82 +1,35 @@
+//分类列表
 export function getCategoryList() {
   return [
     {
       groupId: '24948',
-      name: '女装',
+      name: '无线麦克风',
       thumbnail:
         'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
       children: [
         {
           groupId: '249481',
-          name: '女装',
+          name: '无线麦克风',
           thumbnail:
             'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
           children: [
             {
               groupId: '249480',
-              name: '卫衣',
+              name: 'U段麦克风',
               thumbnail:
                 'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-1.png',
             },
             {
               groupId: '249480',
-              name: '毛呢外套',
+              name: 'V段麦克风',
               thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-2.png',
+                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-1.png',
             },
             {
               groupId: '249480',
-              name: '雪纺衫',
+              name: '蓝牙麦克风',
               thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-3.png',
-            },
-            {
-              groupId: '249480',
-              name: '羽绒服',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-4.png',
-            },
-            {
-              groupId: '249480',
-              name: '毛衣',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-5.png',
-            },
-            {
-              groupId: '249480',
-              name: '棉衣',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-6.png',
-            },
-            {
-              groupId: '249480',
-              name: '西装',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-7.png',
-            },
-            {
-              groupId: '249480',
-              name: '马甲',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-8.png',
-            },
-            {
-              groupId: '249480',
-              name: '连衣裙',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-9.png',
-            },
-            {
-              groupId: '249480',
-              name: '半身裙',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-10.png',
-            },
-            {
-              groupId: '249480',
-              name: '裤子',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-11.png',
+                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-1.png',
             },
           ],
         },
@@ -84,45 +37,21 @@ export function getCategoryList() {
     },
     {
       groupId: '24948',
-      name: '男装',
+      name: '有线麦克风',
       thumbnail:
         'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
       children: [
         {
           groupId: '249481',
-          name: '男装',
+          name: '有线麦克风',
           thumbnail:
             'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
           children: [
             {
               groupId: '249480',
-              name: '卫衣',
+              name: '电容麦克风',
               thumbnail:
                 'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-1.png',
-            },
-            {
-              groupId: '249480',
-              name: '裤子',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-11.png',
-            },
-            {
-              groupId: '249480',
-              name: '西装',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-7.png',
-            },
-            {
-              groupId: '249480',
-              name: '羽绒服',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-4.png',
-            },
-            {
-              groupId: '249480',
-              name: '马甲',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-8.png',
             },
           ],
         },
@@ -130,33 +59,21 @@ export function getCategoryList() {
     },
     {
       groupId: '24948',
-      name: '儿童装',
+      name: '蓝牙麦克风',
       thumbnail:
         'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
       children: [
         {
           groupId: '249481',
-          name: '儿童装',
+          name: '蓝牙麦克风',
           thumbnail:
             'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
           children: [
             {
               groupId: '249480',
-              name: '马甲',
+              name: '领夹式麦克风',
               thumbnail:
                 'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-8.png',
-            },
-            {
-              groupId: '249480',
-              name: '裤子',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-11.png',
-            },
-            {
-              groupId: '249480',
-              name: '连衣裙',
-              thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/classify/img-9.png',
             },
             {
               groupId: '249480',
@@ -170,33 +87,87 @@ export function getCategoryList() {
     },
     {
       groupId: '24948',
-      name: '美妆',
+      name: '专业麦克风',
       thumbnail:
         'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
       children: [
         {
           groupId: '249481',
-          name: '美妆',
+          name: '专业麦克风',
           thumbnail:
             'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
           children: [
             {
               groupId: '249480',
-              name: '唇釉',
+              name: '录音棚麦克风',
               thumbnail:
                 'https://cdn-we-retail.ym.tencent.com/tsr/goods/mz-20a1.png',
             },
+          ],
+        },
+      ],
+    },
+    {
+      groupId: '24948',
+      name: '直播声卡',
+      thumbnail:
+        'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
+      children: [
+        {
+          groupId: '249481',
+          name: '专业麦克风',
+          thumbnail:
+            'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
+          children: [
             {
               groupId: '249480',
-              name: '美妆蛋',
+              name: '录音棚麦克风',
               thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/goods/mz-11a1.png',
+                'https://cdn-we-retail.ym.tencent.com/tsr/goods/mz-20a1.png',
             },
+          ],
+        },
+      ],
+    },
+    {
+      groupId: '24948',
+      name: '音响',
+      thumbnail:
+        'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
+      children: [
+        {
+          groupId: '249481',
+          name: '专业麦克风',
+          thumbnail:
+            'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
+          children: [
             {
               groupId: '249480',
-              name: '眼影',
+              name: '录音棚麦克风',
               thumbnail:
-                'https://cdn-we-retail.ym.tencent.com/tsr/goods/mz-12b.png',
+                'https://cdn-we-retail.ym.tencent.com/tsr/goods/mz-20a1.png',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      groupId: '24948',
+      name: '官方配件',
+      thumbnail:
+        'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
+      children: [
+        {
+          groupId: '249481',
+          name: '专业麦克风',
+          thumbnail:
+            'https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png',
+          children: [
+            {
+              groupId: '249480',
+              name: '录音棚麦克风',
+              thumbnail:
+                'https://cdn-we-retail.ym.tencent.com/tsr/goods/mz-20a1.png',
             },
           ],
         },
