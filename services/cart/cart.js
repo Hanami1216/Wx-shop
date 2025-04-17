@@ -14,7 +14,10 @@ export function fetchCartGroupData(params) {
     return mockFetchCartGroupData(params);
   }
 
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getCart',
+      data: params
+    })
+    .then((res) => res.result.data);
 }

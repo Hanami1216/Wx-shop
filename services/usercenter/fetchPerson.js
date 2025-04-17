@@ -22,7 +22,9 @@ export function fetchPerson() {
   if (config.useMock) {
     return mockFetchPerson();
   }
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getPerson',
+    })
+    .then((res) => res.result);
 }

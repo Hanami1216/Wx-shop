@@ -12,7 +12,9 @@ export function fetchUserCenter() {
   if (config.useMock) {
     return mockFetchUserCenter();
   }
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getUserInfo',
+    })
+    .then((res) => res.result);
 }

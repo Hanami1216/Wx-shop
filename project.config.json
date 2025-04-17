@@ -47,7 +47,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.23.1",
-  "appid": "wx67ea97f77b8394d4",
+  "appid": "wxf4de59ef2b386a3f",
   "projectname": "tdesign-miniprogram-starter-retail",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
@@ -138,5 +138,8 @@
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "cloudfunctionRoot": "cloudfunctions/",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "cloud": true
 }
