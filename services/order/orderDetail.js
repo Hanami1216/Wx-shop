@@ -14,9 +14,15 @@ export function fetchOrderDetail(params) {
     return mockFetchOrderDetail(params);
   }
 
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getOrderDetail',
+      data: {
+        type: 'detail',
+        params
+      }
+    })
+    .then((res) => res.result.data);
 }
 
 /** 获取客服mock数据 */
@@ -33,7 +39,13 @@ export function fetchBusinessTime(params) {
     return mockFetchBusinessTime(params);
   }
 
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getOrderDetail',
+      data: {
+        type: 'business',
+        params
+      }
+    })
+    .then((res) => res.result.data);
 }

@@ -23,7 +23,13 @@ export function fetchGoodsList(pageIndex = 1, pageSize = 20) {
   if (config.useMock) {
     return mockFetchGoodsList(pageIndex, pageSize);
   }
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getGoods',
+      data: {
+        type: 'list',
+        params: { pageIndex, pageSize }
+      }
+    })
+    .then((res) => res.result.data);
 }

@@ -12,9 +12,14 @@ export function getSearchHistory() {
   if (config.useMock) {
     return mockSearchHistory();
   }
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getSearch',
+      data: {
+        type: 'history'
+      }
+    })
+    .then((res) => res.result.data);
 }
 
 /** 获取搜索历史 */
@@ -29,7 +34,12 @@ export function getSearchPopular() {
   if (config.useMock) {
     return mockSearchPopular();
   }
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getSearch',
+      data: {
+        type: 'popular'
+      }
+    })
+    .then((res) => res.result.data);
 }

@@ -14,9 +14,15 @@ export function fetchOrders(params) {
     return mockFetchOrders(params);
   }
 
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getOrders',
+      data: {
+        type: 'list',
+        params
+      }
+    })
+    .then((res) => res.result.data);
 }
 
 /** 获取订单列表mock数据 */
@@ -33,7 +39,13 @@ export function fetchOrdersCount(params) {
     return mockFetchOrdersCount(params);
   }
 
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getOrders',
+      data: {
+        type: 'count',
+        params
+      }
+    })
+    .then((res) => res.result.data);
 }

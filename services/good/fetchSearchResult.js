@@ -32,7 +32,13 @@ export function getSearchResult(params) {
   if (config.useMock) {
     return mockSearchResult(params);
   }
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getSearch',
+      data: {
+        type: 'result',
+        params
+      }
+    })
+    .then((res) => res.result.data);
 }

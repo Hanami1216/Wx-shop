@@ -12,7 +12,12 @@ export function getCategoryList() {
   if (config.useMock) {
     return mockFetchGoodCategory();
   }
-  return new Promise((resolve) => {
-    resolve('real api');
-  });
+  return wx.cloud
+    .callFunction({
+      name: 'getCategory',
+      data: {
+        type: 'list'
+      }
+    })
+    .then((res) => res.result.data);
 }
