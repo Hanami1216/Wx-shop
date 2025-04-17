@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "分类",
+  "navigationBarTitleText": "广州市金麦郎科技有限公司",
   "usingComponents": {
     "goods-category": "./components/goods-category/index"
   }

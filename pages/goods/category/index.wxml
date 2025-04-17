@@ -1,4 +1,19 @@
+
 <view class="wrap">
+  <view class="title">
+    <text>广州市金麦郎科技有限公司</text>
+  </view>
+    <view class="search" bind:tap="navToSearchPage">
+    <t-search
+      t-class-input="t-search__input"
+      t-class-input-container="t-search__input-container"
+      placeholder="iphone 13 火热发售中"
+      leftIcon=""
+      disabled
+    >
+      <t-icon slot="left-icon" prefix="wr" name="search" size="40rpx" color="#bbb" />
+    </t-search>
+  </view>
   <goods-category
     level="{{3}}"
     custom-class="goods-category-class"

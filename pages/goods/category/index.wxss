@@ -8,6 +8,19 @@
 .wrap {
   height: 100vh;
   overflow: hidden;
+  background: #ffffff;
+}
+
+.title {
+  padding: 30rpx 0;
+  text-align: center;
+}
+
+.title text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333333;
+  letter-spacing: 2rpx;
 }
 .goods-category-class {
   background-color: #f6f6f6 !important;
